@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "RegistrationIndex";
+}
+<script src="~/Scripts/jquery-3.7.0.min.js"></script>
+<script src="~/Content/Pages/Registration.js"></script>
+
+<h2>RegistrationIndex</h2>
+
+<div>
+    <center>
+
+        <div style="max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+            <input type="hidden" id="hdnRegistration_ID" />
+
+            <label style="display: block; margin-bottom: 10px;">Name</label>
+            <br />
+            <input type="text" id="txtRegistration_FullName" style="width: 100%; height: 40px; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;" placeholder="Enter your name" />
+            <br />
+            <label style="display: block; margin-bottom: 10px;">Email</label>
+            <br />
+            <input type="text" id="txtRegistration_Email" style="width: 100%; height: 40px; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;" placeholder="Enter Your Email Address" />
+            <br />
+            <label style="display: block; margin-bottom: 10px;">Mobile No</label>
+            <br />
+            <input type="text" id="txtRegistration_Mobile" style="width: 100%; height: 40px; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;" placeholder="Enter Your Mobile No" />
+            <br />
+            <label style="display: block; margin-bottom: 10px;">Address</label>
+            <br />
+            <input type="text" id="txtRegistration_Address" style="width: 100%; height: 40px; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;" placeholder="Enter Your Address" />
+            <br />
+            <label style="display: block; margin-bottom: 10px;">Country</label>
+            <br />
+            <input type="text" id="txtRegistration_Country" style="width: 100%; height: 40px; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;" placeholder="Enter Your Country" />
+            <br />
+
+            <input type="button" value="submit" onclick="SaveRegistration()" style="width: 100%; height: 40px; margin-top: 20px; padding: 10px; border: none; border-radius: 5px; background-color: #4CAF50; color: #fff; cursor: pointer; font-size: 16px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);" />
+        </div>
+    </center>
+</div>
+
+<table id="tblRegistration" border="1" class="table">
+    <thead style="background-color:#4CAF50">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile_No</th>
+            <th>Address</th>
+            <th>Country</th>
+        </tr>
+
+    </thead>
+
+    <tbody></tbody>
+
+</table>
+
